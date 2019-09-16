@@ -31,7 +31,8 @@ public class ConnectionPoolBuilder extends ConnectionPool {
     public Connection getConnection() {
         if (list.size()>0){
             final Connection conn = list.removeFirst();
-            return (Connection) Proxy.newProxyInstance(ConnectionPoolBuilder.class.getClassLoader(), conn.getClass().getInterfaces(), new InvocationHandler() {
+//            return (Connection) Proxy.newProxyInstance(ConnectionPoolBuilder.class.getClassLoader(), conn.getClass().getInterfaces(), new InvocationHandler() {
+            return (Connection) Proxy.newProxyInstance(Connection.class.getClassLoader(), new Class<?>[]{Connection.class}, new InvocationHandler() {
                 @Override
                 public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                     if (method.getName().equals("close")){
