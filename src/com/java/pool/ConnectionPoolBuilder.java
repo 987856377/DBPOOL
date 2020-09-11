@@ -1,9 +1,9 @@
 package com.java.pool;
 
-import com.java.custom.DBUtil;
-import com.java.custom.DriverManager;
+import com.java.driver.DBUtil;
+import com.java.driver.DriverManager;
 import com.java.database.DataBase;
-import com.java.util.Connection;
+import com.java.driver.Connection;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

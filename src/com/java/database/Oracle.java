@@ -1,7 +1,7 @@
 package com.java.database;
 
-import com.java.util.Connection;
-import com.java.util.OracleConnection;
+import com.java.driver.Connection;
+import com.java.driver.OracleConnection;
 
 public class Oracle extends DataBase {
 

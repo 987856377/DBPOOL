@@ -1,4 +1,4 @@
-package com.java.custom;
+package com.java.driver;
 
 public class DriverManager {
 

@@ -1,7 +1,7 @@
 package com.java.database;
 
-import com.java.util.Connection;
-import com.java.util.MySQLConnection;
+import com.java.driver.Connection;
+import com.java.driver.MySQLConnection;
 
 public class MySQL extends DataBase {
 

@@ -1,6 +1,0 @@
-单例模式:                   DriverManager
-工厂模式:                   DBUtil
-模板模式:                   DataBase
-桥接模式:                   Connection, DataBase
-观察者模式;                 ConnectionPool, Connection
-装饰器模式:                 Logger, ConcretLogger

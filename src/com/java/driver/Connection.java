@@ -1,4 +1,4 @@
-package com.java.util;
+package com.java.driver;
 
 public interface Connection {
 

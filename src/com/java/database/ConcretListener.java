@@ -1,6 +1,6 @@
 package com.java.database;
 
-import com.java.util.Connection;
+import com.java.driver.Connection;
 
 public class ConcretListener extends Listener {
 

@@ -1,6 +1,6 @@
 package com.java.pool;
 
-import com.java.util.Connection;
+import com.java.driver.Connection;
 
 import java.util.LinkedList;
 
