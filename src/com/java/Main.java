@@ -1,22 +1,22 @@
 package com.java;
 
-import com.java.database.ConcretListener;
-import com.java.database.DataBase;
+import com.java.database.ConcreteListener;
+import com.java.pool.ProxyConnection;
 import com.java.database.Listener;
+import com.java.pool.Connection;
 import com.java.pool.ConnectionPool;
 import com.java.pool.ConnectionPoolBuilder;
-import com.java.driver.Connection;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         ConnectionPool pool = new ConnectionPoolBuilder(10);
-        Connection connection =  pool.getConnection();
+        Connection connection = pool.getConnection();
         Connection connection1 = pool.getConnection();
 
         pool.valid(connection);
 
-        DataBase executer = ((ConnectionPoolBuilder) pool).getInstance();
-        Listener listener = new ConcretListener(executer);
+        ProxyConnection executer = ((ConnectionPoolBuilder) pool).getInstance();
+        Listener listener = new ConcreteListener(executer);
         listener.start();
 
         String sql = "select * from user";

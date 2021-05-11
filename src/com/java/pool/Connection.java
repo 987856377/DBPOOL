@@ -1,4 +1,4 @@
-package com.java.driver;
+package com.java.pool;
 
 public interface Connection {
 

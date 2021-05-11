@@ -1,8 +1,11 @@
 package com.java.database;
 
-public abstract class Listener extends DataBase{
+import com.java.pool.ProxyConnection;
+
+public abstract class Listener extends ProxyConnection {
 
     public abstract void start();
+
     public abstract void stop();
 
 }
